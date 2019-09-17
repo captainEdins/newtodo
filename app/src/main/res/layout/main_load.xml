@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context=".MainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backblend"
+                android:id="@+id/main" android:visibility="visible">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backblend"
+            android:id="@+id/fisrt_page" android:visibility="visible">
+        <ImageView
+                android:layout_width="227dp"
+                android:layout_height="132dp"
+                app:srcCompat="@drawable/lol"
+                android:id="@+id/imageView4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="150dp"
+                android:layout_alignParentTop="true"/>
+        <TextView
+                android:text="Hello Edins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/call_boos"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:gravity="center" android:textStyle="bold"/>
+        <Button
+                android:text="Personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/per_but"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/call_boos"
+                android:layout_marginBottom="297dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded"
+                android:textColor="#19B5CA"/>
+        <Button
+                android:text="Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bus_but"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/call_boos"
+                android:background="@drawable/rounded"
+                android:textColor="#18B8CC"/>
+        <TextView
+                android:text="32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/bus_but"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"/>
+        <TextView
+                android:text="13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/bus_but"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="80dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_me"
+                android:id="@+id/plus_todo"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded" app:fabCustomSize="50dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F618D"
+            android:id="@+id/second_page" android:visibility="gone">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backs"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageView_back"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true"/>
+        <TextView
+                android:text="ADD NEW THING"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" android:textAlignment="center"/>
+        <ImageView
+                android:layout_width="159dp"
+                android:layout_height="129dp"
+                android:src="@drawable/lol"
+                android:id="@+id/imageView3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="73dp"
+                android:layout_alignParentTop="true"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Place"
+                android:backgroundTint="#fff"
+                android:textColorHint="#ffffff"
+                android:ems="10"
+                android:id="@+id/place_text"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp" android:textColor="#ffffff" android:layout_above="@+id/time_text"
+                android:textSize="12sp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Time"
+                android:backgroundTint="#fff"
+                android:textColorHint="#ffffff"
+                android:ems="10"
+                android:id="@+id/time_text"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp" android:textColor="#ffffff" android:layout_above="@+id/about_text"
+                android:textSize="12sp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Type note"
+                android:backgroundTint="#fff"
+                android:textColorHint="#ffffff"
+                android:ems="10"
+                android:id="@+id/about_text"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp" android:textColor="#ffffff" android:layout_above="@+id/save_button"
+                android:textSize="12sp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Choose personal or business category"
+                android:textColorHint="#ffffff"
+                android:ems="10"
+                android:backgroundTint="#fff"
+                android:id="@+id/cat_text"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp" android:textColor="#ffffff" android:layout_above="@+id/place_text"
+                android:textSize="12sp"/>
+        <Button
+                android:text="ADD YOUR THING"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_button"
+                android:background="#05FFFF"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffffff"
+                android:layout_marginStart="50dp"/>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backblend"
+            android:visibility="gone"
+            android:id="@+id/personal">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+        </androidx.recyclerview.widget.RecyclerView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="@id/recyclerView"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="5dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/return_black"
+                    android:id="@+id/return_back"
+                    android:background="@drawable/rounded" app:fabCustomSize="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
